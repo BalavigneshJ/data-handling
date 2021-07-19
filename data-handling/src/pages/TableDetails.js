@@ -12,8 +12,9 @@ class TableDetails extends Component {
                     <thead>
                         <tr>
                         <th>Column Name</th>
-                        <th>Encryption Type</th>
-                        <th>Encryption complexity</th>
+                        <th>Pseudonymization Type</th>
+                        <th>Pseudonymization complexity</th>
+                        <th>Encryption Key</th>
                         <th>Select</th>
                         </tr>
                     </thead>
@@ -23,6 +24,7 @@ class TableDetails extends Component {
                         <td>Name</td>
                         <td> <Encryption isName= {true} /> </td>
                         <td> <Encryption/></td>
+                        <td><Form.Control type="key" placeholder="Enter key" /></td>
                         <td>
                             <Form.Check name = 'db' type='checkbox' id='inline-details-1'/>
                         </td>
@@ -31,6 +33,7 @@ class TableDetails extends Component {
                         <td>Date of birth</td>
                         <td> <Encryption isName= {true} /> </td>
                         <td> <Encryption/></td>
+                        <td><Form.Control type="key" placeholder="Enter key" /></td>
                         <td>
                             <Form.Check name = 'db' type='checkbox' id='inline-details-2'/>
                         </td>
@@ -39,6 +42,7 @@ class TableDetails extends Component {
                         <td>Email</td>
                         <td> <Encryption isName= {true} /> </td>
                         <td> <Encryption/></td>
+                        <td><Form.Control type="key" placeholder="Enter key" /></td>
                         <td>
                             <Form.Check name = 'db' type='checkbox' id='inline-details-3'/></td>
                     </tr>
@@ -46,21 +50,20 @@ class TableDetails extends Component {
                         <td>Address</td>
                         <td> <Encryption isName= {true} /> </td>
                         <td> <Encryption/></td>
+                        <td><Form.Control type="key" placeholder="Enter key" /></td>
                         <td><Form.Check name = 'db' type='checkbox' id='inline-details-4'/></td>
                     </tr>
                     <tr> 
                         <td>Mobile Number</td>
                         <td> <Encryption isName= {true} /> </td>
                         <td> <Encryption/></td>
+                        <td><Form.Control type="key" placeholder="Enter key" /></td>
                         <td><Form.Check name = 'db' type='checkbox' id='inline-details-5'/></td>
                     </tr>
             
                     </tbody>    
                         
                     </Table>
-
-                    <Form.Label className="bold" >Key</Form.Label>
-                    <Form.Control type="key" placeholder="Enter key" />
 
                     <Form.Label className="bold mt-3">Download Format</Form.Label>
                     <select required className="form-select">
